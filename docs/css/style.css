@@ -1,0 +1,49 @@
+/* Create CSS selectors that hook into the unique id's or classes in the HTML */
+
+body {
+    font-family: Impact, Charcoal, fantasy;
+}
+
+#swapList {
+    float:left;
+    width: 50%;
+}
+
+ul {
+    list-style-type: square; 
+    margin: 2px;
+}
+
+li {
+    line-height: 200%;
+    margin-top: 10px;
+}
+
+input[type=text] {
+    border-width: 0 0 1px 0;
+    border-color: #333;
+    color: red;
+    font-size: 12pt;
+}
+
+#buttonDiv {
+    text-align: center;
+}
+
+#swapButton {
+    margin-top: 30px;
+    width: 200px;
+}
+
+#story {
+    margin-top: 12px;
+    width: 45%;
+    border: 1px dashed blue;
+    padding: 8px;
+    float: left;
+}
+
+.replacement {
+    text-decoration: underline;
+    color: DarkRed;
+}
