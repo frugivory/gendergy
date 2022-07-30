@@ -6,32 +6,44 @@
     </head>
     
     <body>
-    
- <!-- We are creating a simple user interface for a MadLibs type of game -->
-<!-- First we need to create the list of words we will swap into our story -->
-<!-- Then we need to create a button which will run our swap function -->
-<!-- Lastly, we need a place for our story to appear on the UI -->
+
+
 
 <div id="swapList">
+    <h2>Please fill out the form information below</h1>
     <ul>
-        <li><input type="text" id="noun1" /><br>Noun</li>
-        <li><input type="text" id="adjective1" /><br>Adjective</li>
-        <li><input type="text" id="verb1" /><br>Verb</li>
-        <li><input type="text" id="adverb1" /><br>Adverb</li>
-        <li><input type="text" id="noun2" /><br>Noun</li>
-        <li><input type="text" id="adjective2" /><br>Adjective</li>
-        <li><input type="text" id="pluralNoun1" /><br>Plural Noun</li>
-        <li><input type="text" id="pluralNoun2" /><br>Plural Noun</li>  
-        <li><input type="text" id="pluralNoun3" /><br>Plural Noun</li>
-        <li><input type="text" id="bodyPart1" /><br>Part Of The Body</li> 
-        <li><input type="text" id="noun3" /><br>Noun</li>
-        <li><input type="text" id="noun4" /><br>Noun</li>
-        <li><input type="text" id="noun5" /><br>Noun</li>
-        <li><input type="text" id="noun6" /><br>Noun</li>
-        <li><input type="text" id="bodyPart2" /><br>Part Of The Body</li>
+        <ol>
+        <li><input type="text" id="name" value="Ada"/></li>      
+        <div class="tooltip">Name
+        <span class="tooltiptext">Enter your name</span>
+        </div>
+
+        <li><input type="text" id="subjective" value="she"/></li>      
+        <div class="tooltip">Subjective
+        <span class="tooltiptext">Subject of the sentence. e.g "We" in "We pet the elephant"</span>
+        </div>
+
+        <li><input type="text" id="objective" value="her"/></li>      
+        <div class="tooltip">Objective
+        <span class="tooltiptext">Who the verb references. e.g "her" in "Don't sit with her"</span>
+        </div>
+
+        <li><input type="text" id="PossessiveDeterminer" value="her"/></li>      
+        <div class="tooltip">Possessive Determiner
+        <span class="tooltiptext">Adjective that shows possesion. e.g "His" in "His bible is dirty"</span>
+        </div>
+
+        <li><input type="text" id="ProfessionOrSkill" value="teacher"/></li>      
+        <div class="tooltip">Occupation
+        <span class="tooltiptext">Occupation. e.g writer, painter, dive instructor</span>
+        </div>
+
+
+
+    </ol>
     </ul>
     <div id="buttonDiv">
-        <button id="swapButton">Swap In Words!</button>
+        <button id="launchButton">Try it!</button>
     </div>
 </div>
 
@@ -39,7 +51,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
     </body>
-    
+
     </html>
 
 

@@ -9,78 +9,65 @@ the words from our swap list into the story.
 Step 3 - Make the updated story display in the UI. */
 
 // Hook JavaScript into the UI button.
-var swapButton = document.getElementById("swapButton");
-swapButton.addEventListener("click",swapWords);
+// var swapButton = document.getElementById("swapButton");
+// swapButton.addEventListener("click",swapWords);
 
-// Create a story array, which is a list of our story pieces.
-var thePirateStory = [
-    "Ye can always pretend to be a bloodthirsty ",  //index 0
-    "NOUN1",                                        //index 1
-    ", threatening everyone by waving yer ",        //index 2
-    "ADJECTIVE1",                                   //index 3
-    " sword in the air, but until ye learn to ",    // etc.
-    "VERB1",
-    " like a pirate, ye'll never be ",
-    "ADVERB1",
-    " accepted as an authentic ",
-    "NOUN2",
-    ".<br></br>",
-    "So here's what ye do: Cleverly work into yer daily conversations ",
-    "ADJECTIVE2",
-    " pirate phrases such as AHOY THERE, ",
-    "PLURALNOUN1",
-    ", AVAST, YE ",
-    "PLURALNOUN2",
-    ", and SHIVER ME ",
-    "PLURALNOUN3",
-    ". Remember to drop all yer g's when ye say such words as sailin', spittin', and fightin'. This will give ye a/an ",
-    "BODYPART1",
-    " start to being recognized as a swashbucklin' ",
-    "NOUN3",
-    ".<br></br>",
-    "Once ye have the lingo down pat, it helps to wear a three-cornered ",
-    "NOUN4",
-    " on yer head, stash a/an ",
-    "NOUN5",
-    " in yer pants, and keep a/an ",
-    "NOUN6",
-    " perched atop yer ",
-    "BODYPART2",
-    ". Aye, now ye be a real pirate!"
-];
 
-// Create a function which will swap words into specific places in our story
-// Then display the updated story in the UI
-function swapWords() {
-    
-    thePirateStory[1] = "<span class='replacement'>" + document.getElementById("noun1").value + "</span>";
-    thePirateStory[3] = "<span class='replacement'>" + document.getElementById("adjective1").value + "</span>";
-    thePirateStory[5] = "<span class='replacement'>" + document.getElementById("verb1").value + "</span>";
-    thePirateStory[7] = "<span class='replacement'>" + document.getElementById("adverb1").value + "</span>";
-    thePirateStory[9] = "<span class='replacement'>" + document.getElementById("noun2").value + "</span>";
-    thePirateStory[12] = "<span class='replacement'>" + document.getElementById("adjective2").value + "</span>";
-    thePirateStory[14] = "<span class='replacement'>" + document.getElementById("pluralNoun1").value + "</span>";
-    thePirateStory[16] = "<span class='replacement'>" + document.getElementById("pluralNoun2").value + "</span>";
-    thePirateStory[18] = "<span class='replacement'>" + document.getElementById("pluralNoun3").value + "</span>";
-    thePirateStory[20] = "<span class='replacement'>" + document.getElementById("bodyPart1").value + "</span>";
-    thePirateStory[22] = "<span class='replacement'>" + document.getElementById("noun3").value + "</span>";
-    thePirateStory[25] = "<span class='replacement'>" + document.getElementById("noun4").value + "</span>";
-    thePirateStory[27] = "<span class='replacement'>" + document.getElementById("noun5").value + "</span>";
-    thePirateStory[29] = "<span class='replacement'>" + document.getElementById("noun6").value + "</span>";
-    thePirateStory[31] = "<span class='replacement'>" + document.getElementById("bodyPart2").value + "</span>";
-    
-    //create a variable to hold the assembled story and initialize it as an empty string.
-//    var assembledPirateStory = "";
-    var assembledPirateStory = thePirateStory.join("");
+window.onload = function () {
+    var name = document.querySelector("#name");
+    var subjective = document.querySelector("#subjective");
+    var ProfessionOrSkill = document.querySelector("#ProfessionOrSkill")
+    // var possessivePronoun = document.querySelector("#possessivePronoun");
+    var PossessiveDeterminer = document.querySelector("#PossessiveDeterminer");
+// 
+    var story = document.querySelector("#story")
+    var launch = document.querySelector("#launchButton");
+    launch.addEventListener("click", writeStory, false);
 
-/* OR an alternative loop
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
 
-    //Loop through the array to grab each story piece and add each piece to the end of the string to assemble the story.
-    for	(var index = 0; index < thePirateStory.length; index++) {
-    assembledPirateStory += thePirateStory[index];
-    }
-*/  
-  
-    document.getElementById("story").innerHTML = assembledPirateStory;
+    function writeStory(){
+        var launchedStory = "";
+        // header / title of letter 
+        launchedStory += "<h2>Letter of recommendation for " + capitalizeFirstLetter(name.value) + " </h2>";
+
+        launchedStory += "<p>It is my pleasure to reccomend "+ capitalizeFirstLetter(name.value) + " for this position. " 
+        + capitalizeFirstLetter(name.value) + " and I have gotten to know eachother well over the years. " 
+        + capitalizeFirstLetter(subjective.value) + " is honest, dependable, hardworking and kind. Beyond that, " 
+        + subjective.value + " is a uniquely talented " + ProfessionOrSkill.value 
+        + ".</p>"
+
+        + "<p>"
+        +"Although uncommon, " + capitalizeFirstLetter(name.value) + "'s knowledge of, and expertise as a " 
+        + ProfessionOrSkill.value + " follows "  + PossessiveDeterminer.value +" equally rare commitment to constant improvement." 
+        + "</p>"
+
+        + "<p>"
+        + "Along with " +  PossessiveDeterminer.value + " undeniable talent, "  
+        + capitalizeFirstLetter(name.value) + " has always been a joy to be around."
+        + "</p>"
+
+        + "<p>"
+        + "It is without hesitation that I recommend " + capitalizeFirstLetter(name.value) 
+        + " for this position as a" + ProfessionOrSkill.value
+        + ".</p>"
+
+        + "<p>"
+        + "Kind regards,"
+        + "</p>"
+        + "<p>"
+        + "Another human"
+        + "</p>"
+
+
+
+
+        // launchedStory += "Only silly people choose " + color.value + " as their favorite color.</p>";
+        // launchedStory += "<p>Is " + place.value + " your current place or your birth place.</p>";
         
+
+       story.innerHTML = launchedStory;
+    }
 }
