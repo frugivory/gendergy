@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gendergy</title>
+    <link>https://frugivory.github.io/gendergy/</link>
+    <description>Recent content on Gendergy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jul 2022 20:49:49 -0400</lastBuildDate><atom:link href="https://frugivory.github.io/gendergy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://frugivory.github.io/gendergy/posts/my-first-post/</link>
+      <pubDate>Fri, 29 Jul 2022 20:49:49 -0400</pubDate>
+      
+      <guid>https://frugivory.github.io/gendergy/posts/my-first-post/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://frugivory.github.io/gendergy/posts/test2/</link>
+      <pubDate>Fri, 29 Jul 2022 20:49:49 -0400</pubDate>
+      
+      <guid>https://frugivory.github.io/gendergy/posts/test2/</guid>
+      <description> Word Count: 0 Noun Adjective Verb Adverb Noun Adjective Plural Noun Plural Noun Plural Noun Part Of The Body Noun Noun Noun Noun Part Of The Body Swap In Words! </description>
+    </item>
+    
+  </channel>
+</rss>
