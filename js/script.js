@@ -40,7 +40,7 @@ window.onload = function () {
         + ".</p>"
 
         + "<p>"
-        +"Although uncommon, " + capitalizeFirstLetter(name.value) + "'s knowledge of, and expertise as a " 
+        + capitalizeFirstLetter(name.value) + "'s rare knowledge and expertise as a " 
         + ProfessionOrSkill.value + " follows "  + PossessiveDeterminer.value +" equally rare commitment to constant improvement." 
         + "</p>"
 
