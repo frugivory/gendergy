@@ -1,5 +1,5 @@
 ---
-title: "Test"
+title: "Test2"
 date: 2022-07-29T20:49:49-04:00
 draft: false
 ---
@@ -13,3 +13,4 @@ draft: false
 {{< story >}} 
 <!-- first qustion: -->
 <!-- {{<form name="run">}} -->
+import { test } from 'js/';
