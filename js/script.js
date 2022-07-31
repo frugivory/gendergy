@@ -41,7 +41,7 @@ window.onload = function () {
 
         + "<p>"
         + capitalizeFirstLetter(name.value) + "'s rare knowledge and expertise as a " 
-        + ProfessionOrSkill.value + " follows "  + PossessiveDeterminer.value +" equally rare commitment to constant improvement." 
+        + ProfessionOrSkill.value + " follows "  + PossessiveDeterminer.value +" equally uncommon commitment to constant improvement." 
         + "</p>"
 
         + "<p>"
@@ -51,7 +51,7 @@ window.onload = function () {
 
         + "<p>"
         + "It is without hesitation that I recommend " + capitalizeFirstLetter(name.value) 
-        + " for this position as a" + ProfessionOrSkill.value
+        + " for this position as a " + ProfessionOrSkill.value
         + ".</p>"
 
         + "<p>"
