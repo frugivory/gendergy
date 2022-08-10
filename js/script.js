@@ -58,8 +58,8 @@ function plurality(string) {
         // header / title of letter 
         launchedStory += "<h2>Letter of recommendation for " + capitalizeFirstLetter(name.value) + " </h2>";
         
-        launchedStory += "<p>It is my pleasure to reccomend "+ capitalizeFirstLetter(name.value) + " for this position. " 
-        + capitalizeFirstLetter(name.value) + " and I have gotten to know eachother well over the years. " 
+        launchedStory += "<p>It is my pleasure to recomend "+ capitalizeFirstLetter(name.value) + " for this position. " 
+        + capitalizeFirstLetter(name.value) + " and I have gotten to know each other well over the years. " 
         + capitalizeFirstLetter(subjective.value) + " " + plurality(PluralityCheck.checked)
         + " honest, dependable, hardworking and kind. Beyond that, " 
         + subjective.value + " " + plurality(PluralityCheck.checked) + " a uniquely talented " + ProfessionOrSkill.value 
