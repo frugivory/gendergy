@@ -2,6 +2,7 @@
 
 body {
     font-family: Neue Helvetica;
+    background-color: rgb(244, 240, 240);
 }
 
 #swapList {
@@ -76,3 +77,6 @@ input[type=text] {
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+
+
